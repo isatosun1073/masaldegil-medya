@@ -26,17 +26,21 @@ EP.append(dict(no=2, ad="Boş Sıra", shots=[
  ("paper", {"lines": ["YOKLAMA DEFTERİ", "1. Zeynep ✓", "2. Mehmet ✓", "3. Ayşe ✓", "...", "8. Selim Öğretmen", "CEVAP VERME!"]}, "Yoklama defterini açtı. Yedi isim tanıdıktı. Sekizinci satırda bir öğretmenin adı yazıyordu. Selim. Ve yanında, kırmızı kalemle: cevap verme."),
  ("classroom", {"zoom": 1}, "Emre o ismi yüksek sesle okudu. Selim. Sınıf bir anda sustu. En öndeki kız, Zeynep, gözünü kırpmadan fısıldadı."),
  ("girl", {}, "[whispering] Hocam... onun adını söylemeyin. Bir kere söylediniz. İki kere daha söylerseniz... gelir."),
+ ("village", {}, "O gün okuldan çıkarken köylüler yol kenarında duruyordu. Kimse konuşmuyordu. Hepsi aynı anda başını çevirip ona baktı. Sonra aynı anda... başlarını geri çevirdiler."),
  ("desk", {}, "O gece Emre uyuyamadı. Saat üçü on iki geçe, sobanın arkasındaki tahta oynadı. Altından, nemli, kalın bir defter çıktı."),
  ("paper", {"lines": ["Selim'in defteri", "Bu köyde kimse ölmüyor.", "Kimse doğmuyor.", "Her zemheri sadece...", "bir yabancı kayboluyor."]}, "Selim Hoca'nın defteriydi. İlk sayfada tek bir cümle vardı: Bu köyde kimse ölmüyor. Kimse doğmuyor. Her zemheri, sadece bir yabancı kayboluyor."),
  ("door_in", {"call": "mom1"}, "Ve tam o anda... kapının arkasından yine adını duydu."),
+ ("profile", {}, "İki kere. Tıpkı ilk gece gibi. Emre sabaha kadar üçüncüsünü bekledi. Saatler geçmek bilmedi. Ama üçüncüsü... yine gelmedi. Sanki biri, acele etmiyordu."),
  ("carved", {"text": "2"}, "Sabah kapıda yeni bir çentik vardı. İki. Ama bu sefer altına başka bir şey kazınmıştı. Bir isim. Selim."),
 ], son="Selim Hoca'ya ne oldu? Defterin son sayfasında ne yazıyor? Yarın gece 00.00'da."))
 
 EP.append(dict(no=3, ad="Selim'in Defteri", shots=[
  ("hook_text", {"text": "3. BÖLÜM\nSELİM'İN DEFTERİ"}, "Bir defter düşün. Senden önce burada yaşamış birinin son günlerini yazdığı. Ve her sayfası... sana yazılmış."),
+ ("desk", {}, "O gece Emre defteri bırakamadı. Sobanın ışığında, sayfa sayfa okudu. Ve fark etti: Selim'in el yazısı her gece biraz daha bozuluyordu. Sanki yazan el... her gece biraz daha değişiyordu."),
  ("paper", {"lines": ["7. gece", "Kapıya annem geldi.", "Annem öleli on yıl oldu.", "Cevap vermedim."]}, "Yedinci gece, diye yazmıştı Selim. Kapıya annem geldi. Annem öleli on yıl oldu. Cevap vermedim."),
  ("paper", {"lines": ["21. gece", "Muhtar her sabah", "ipe bir düğüm atıyor.", "Kırk düğüm.", "Kırk gece."]}, "Yirmi birinci gece. Muhtar her sabah bir ipe düğüm atıyor. Kırk düğüm. Kırk gece. Neyi saydığını sordum. Gülümsedi."),
  ("profile", {}, "Emre sayfaları çevirdikçe elleri titredi. Çünkü Selim'in yazdığı her şey, ona bu üç gecede olanlarla aynıydı. Kelimesi kelimesine."),
+ ("paper", {"lines": ["33. gece", "Ellerim üşümüyor artık.", "Ayaklarım...", "ayaklarıma bakamıyorum."]}, "Otuz üçüncü gece. Ellerim üşümüyor artık. Ayaklarım... Ayaklarıma bakamıyorum."),
  ("paper", {"lines": ["39. gece", "Bu gece üçüncüyü söyledi.", "Cevap vermedim.", "Ama biri cevap verdi.", "BENİM SESİMLE."]}, "Otuz dokuzuncu gece. Bu gece üçüncüyü söyledi. Cevap vermedim. Ama biri cevap verdi. Benim sesimle."),
  ("photo", {"year": "1987"}, "Defterin arasından bir fotoğraf düştü. Köy meydanı. Kalabalık. Arkasında tarih: Ocak, bin dokuz yüz seksen yedi."),
  ("photo", {"year": "1987", "zoom": 1}, "Emre fotoğrafa yakından baktı. En önde, elinde fenerle duran adam... muhtardı. Bugünkü yüzüyle. Bir gün bile yaşlanmamış."),
@@ -44,21 +48,25 @@ EP.append(dict(no=3, ad="Selim'in Defteri", shots=[
 
 EP.append(dict(no=4, ad="Muhtar", shots=[
  ("hook_text", {"text": "4. BÖLÜM\nMUHTAR"}, "Bazı kapılar ziyaret için değil, saklamak için yapılır. Muhtarın evi de öyleydi."),
- ("village", {}, "Dördüncü gün, muhtar köyde yokken Emre onun evine gitti. Kapı kilitli değildi. Karlıdere'de hiçbir kapı kilitli değildi. Çünkü kimse içeriden kaçmıyordu."),
+ ("classroom", {}, "Dördüncü gün Zeynep okula gelmedi. Emre çocuklara sordu. Hepsi aynı cevabı verdi. Aynı anda. Aynı sesle: Zeynep hasta hocam. Muhtarın evinde yatıyor."),
+ ("village", {}, "O gün öğleden sonra, muhtar köyde yokken Emre onun evine gitti. Kapı kilitli değildi. Karlıdere'de hiçbir kapı kilitli değildi. Çünkü kimse içeriden kaçmıyordu."),
  ("rope", {"knots": 4}, "Duvarda bir ip asılıydı. Üzerinde dört düğüm. Ve düğümlerin yanında, rafta... tozlu, metal isim levhaları."),
  ("plates", {"names": ["SELİM ÖĞRETMEN  2025", "HÜLYA ÖĞRETMEN  2024", "KADİR ÖĞRETMEN  2023", "NURİ ÖĞRETMEN  1987"]}, "Selim öğretmen. Hülya öğretmen. Kadir öğretmen. Her yıl bir isim. Her zemheri bir öğretmen. Ve en eskisi... bin dokuz yüz seksen yedi."),
  ("profile", {}, "Emre bir adım geri çekildi. Arkasındaki dolabın kapağına çarptı. Kapak açıldı. İçinde, kadife bir beze sarılı, yepyeni bir levha duruyordu."),
  ("plates", {"names": ["EMRE ÖĞRETMEN  2026"], "single": 1}, "Üzerinde, taze kazınmış harflerle... Emre öğretmen. İki bin yirmi altı."),
+ ("profile", {"zoom": 1}, "Levhanın arkasında bir not vardı. Kurşun kalemle, aceleyle yazılmış. Selim'in el yazısıyla. Tek kelime: Kaç. Hâlâ vaktin varken... kaç."),
  ("muhtar_door", {}, "Arkasından bir ses geldi. Muhtar kapıdaydı. Elinde fener. Yüzünde, o hiç değişmeyen gülümseme."),
  ("muhtar_door", {"zoom": 1}, "[whispering] Erken bakmışsın hocam. Daha otuz altı gece var."),
 ], son="Levha neden şimdiden hazır? Emre kaçabilecek mi? 5. bölüm yarın gece 00.00'da."))
 
 EP.append(dict(no=5, ad="Kaçış", shots=[
  ("hook_text", {"text": "5. BÖLÜM\nKAÇIŞ"}, "Kaçmak mümkün mü? Herkes bunu sorar. Asıl soru şu: Kaçtığın yer gerçekten var mı?"),
+ ("desk", {}, "Emre o akşam bir karar verdi. Levhayı, defteri, fotoğrafı çantasına koydu. Sabahı beklemeyecekti. Muhtar uyurken, köy uyurken... gidecekti."),
  ("road", {}, "Beşinci gece Emre çantasını aldı ve yürümeye başladı. On iki kilometre. İlçe yoluna kadar. Kar dizlerine kadardı."),
  ("road", {"lights": 1}, "Saat üçe doğru, karanlığın içinden iki far belirdi. Eski bir minibüs. Şoför camı indirdi, yüzüne uzun uzun baktı."),
  ("profile", {}, "Emre titreyerek anlattı. Karlıdere'den geliyorum, dedi. Şoför bir an sustu. Sonra güldü. Ama gözleri gülmüyordu."),
  ("ruins", {}, "Karlıdere mi? Orası bin dokuz yüz seksen yedide boşaltıldı oğlum. Bir zemheri gecesi. Kırk kişi... tek gecede kayboldu. Otuz dokuz yıldır orada kimse yaşamıyor."),
+ ("photo", {"year": "1987"}, "Şoför torpidoyu açtı. Sararmış bir gazete kupürü uzattı. Aynı fotoğraf. Aynı kalabalık. Altında manşet: Karlıdere'de kırk kişi kayıp. Ve en önde, fenerle duran adam."),
  ("road", {"empty": 1}, "Emre başını çevirdi. Minibüs yoktu. Far yoktu. İz yoktu. Sadece kendi ayak izleri vardı. Ve izler... köye doğru gidiyordu."),
  ("door_in", {}, "Gözlerini açtığında lojmandaydı. Çantası kapının önünde, kar içinde duruyordu. Ve kapıda yeni bir çentik vardı."),
  ("carved", {"text": "5"}, "Beş. Köy onu bırakmamıştı. Hiç bırakmamıştı."),
@@ -69,19 +77,23 @@ EP.append(dict(no=6, ad="Zeynep'in Resmi", shots=[
  ("classroom", {}, "Emre ertesi gün derse girdi. Çocuklar yerlerindeydi. Sanki hiçbir şey olmamış gibi. Sanki bu köy otuz dokuz yıldır boş değilmiş gibi."),
  ("girl", {}, "Teneffüste Zeynep yanına geldi. Bir kâğıt uzattı. Hiçbir şey söylemedi. Sadece, kimse görmesin diye, kâğıdı ters tuttu."),
  ("drawing", {}, "Bir resimdi. Lojman. Kapıda Emre. Arkasında, boynuzlu, uzun kollu bir gölge. Ve köy meydanında... bütün köylüler. Ayaklarının yerinde, çatal toynaklar."),
+ ("paper", {"lines": ["Resmin arkasında:", "Kapının arkasındakini", "annen sanma.", "ANNEN DEĞİL."]}, "Resmin arkasında, çocuk eliyle yazılmış bir not vardı. Kapının arkasındakini annen sanma. Annen değil."),
  ("girl", {"zoom": 1}, "[whispering] Onlar da gelmişti hocam. Senin gibi. Onlar da cevap vermemişti."),
  ("classroom", {"shadow": 1}, "Emre başını kaldırdı. Güneş pencereden vuruyordu. Sınıfın duvarında yedi çocuğun gölgesi vardı. Altısı, çocuk gölgesiydi."),
  ("shadow", {}, "Yedincisi... Zeynep'in gölgesiydi. Ve başının üstünde, iki uzun... kıvrık... boynuz vardı."),
+ ("girl", {"zoom": 1}, "Emre dönüp Zeynep'e baktı. Zeynep ona gülümsedi. Hiçbir şey söylemedi. Sadece parmağını dudaklarına götürdü. Şşşt."),
 ], son="Zeynep kim? Ve neden Emre'yi uyarıyor? 7. bölüm yarın gece 00.00'da."))
 
 EP.append(dict(no=7, ad="Telefon", shots=[
  ("hook_text", {"text": "7. BÖLÜM\nTELEFON"}, "Köyde çekmeyen telefon, otuz birinci gece... çaldı."),
  ("desk", {}, "Otuz gün boyunca Emre her gece saydı. Her gece biri adını iki kere söyledi ve sustu. Her sabah kapıda yeni bir çentik. Otuz. Bir gece babası, bir gece çocukluk arkadaşı, bir gece... kendi sesi."),
  ("carved", {"text": "30"}, "Ama hiçbir gece üçüncüyü söylemediler. Sanki bekliyorlardı. Sanki doğru sesi arıyorlardı."),
+ ("profile", {}, "Emre artık uyumuyordu. Geceleri kapının önünde, sırtını kapıya dayayıp oturuyordu. Ve her gece, kapının öbür tarafında da birinin... tam aynı şekilde oturduğunu hissediyordu."),
  ("phone", {"caller": "Annem"}, "Ekranda tek kelime vardı. Annem. Emre titreyen parmaklarla açtı."),
  ("profile", {}, "Annesinin sesi ağlıyordu. Oğlum, dedi, sen ne yapıyorsun? Kırk gündür her gece... kapıma gelip adımı söylüyorsun."),
  ("profile", {"zoom": 1}, "Emre'nin kanı dondu. Ben buradayım anne, dedi. Karlıdere'deyim. Hiçbir yere gitmedim."),
  ("phone", {"caller": "Annem", "static": 1}, "Hat cızırdadı. Annesinin sesi bir anda sakinleşti. Çok sakin. Fazla sakin. Biliyorum oğlum, dedi. Ben de buradayım."),
+ ("door_in", {}, "Emre telefonu kulağından indirdi. Hat hâlâ açıktı. Telefondan gelen nefes sesi... kapının arkasından gelen nefes sesiyle aynı anda alınıp veriliyordu."),
  ("door_in", {}, "Kapının önünde... ayak sesleri."),
  ("door_in", {"call": "mom2"}, ""),
 ], son="Kapıdaki gerçekten annesi mi? 8. bölüm yarın gece 00.00'da."))
@@ -89,8 +101,10 @@ EP.append(dict(no=7, ad="Telefon", shots=[
 EP.append(dict(no=8, ad="Kapıdaki", shots=[
  ("hook_text", {"text": "8. BÖLÜM\nKAPIDAKİ"}, "En zor şey neydi biliyor musun? Korkunç bir sesi duymamak değil. Sevdiğin bir sesi duyup... kapıyı açmamak."),
  ("door_in", {}, "Emre o gece kapıyı açmadı. Annesi sabaha kadar ağladı. Üşüdüğünü söyledi. Ellerinin donduğunu söyledi. Emre kulaklarını tıkadı. Saydı. Sabah ezanına kadar saydı."),
+ ("profile", {"call": "mom2"}, "Bir ara annesinin sesi değişti. Ninni söylemeye başladı. Emre'nin çocukken dinlediği ninniyi. Kimsenin bilmediği... sadece ikisinin bildiği ninniyi."),
  ("prints", {}, "Sabah kapıyı açtığında, karda annesinin ayak izleri vardı. Küçük, tanıdık izler. Kapıya kadar geliyordu."),
  ("prints", {"turn": 1}, "Ama geri dönen izler... insan izi değildi."),
+ ("classroom", {}, "O gün Emre derse girdi. Sınıfta yedi çocuk vardı. Ve ilk kez, en arkadaki boş sıranın üstünde tebeşir tozu vardı. Biri parmağıyla tek bir kelime yazmıştı: Yarın."),
  ("village", {}, "Köy meydanında herkes toplanmıştı. Kırk kişi. Hepsi ona bakıyordu. Muhtar öne çıktı. Elinde ip vardı. Otuz dokuz düğüm."),
  ("rope", {"knots": 39}, "[whispering] Aferin hocam. Kimse buraya kadar gelemedi. Selim bile. Bir gece kaldı."),
  ("muhtar_door", {}, "Ve muhtar ilk kez gülümsemedi. Fısıldadı: Yarın gece üçüncüsü gelecek. Cevap vermezsen... sen de bizden olursun."),
@@ -98,9 +112,11 @@ EP.append(dict(no=8, ad="Kapıdaki", shots=[
 
 EP.append(dict(no=9, ad="Gerçek Kural", shots=[
  ("hook_text", {"text": "9. BÖLÜM\nGERÇEK KURAL"}, "Sana söylenen kuralı hatırlıyor musun? Adını üç kere çağırırlarsa cevap verme. Peki ya kural... ters söylendiyse?"),
+ ("carved", {"text": "39"}, "Otuz dokuz. Kapıda yer kalmamıştı. Çentikler kapı kasasına, eşiğe, pencere pervazına taşmıştı. Sanki lojman... sayılmaktan yorulmuştu."),
  ("stove", {}, "Son gece. Emre Selim'in defterini sobaya atmak üzereydi. Ateş kapağı yaladı. Ve yanan cildin arasından, gizli bir sayfa ortaya çıktı."),
  ("paper", {"lines": ["GERÇEK KURAL", "Üç kere çağrıldığında", "cevap vermeyen...", "ÇAĞIRAN OLUR."], "burn": 1}, "Gerçek kural. Üç kere çağrıldığında cevap vermeyen... çağıran olur."),
  ("drawing", {}, "Her şey yerine oturdu. Köylüler. Toynaklar. Kırk kişi. Hepsi bir zamanlar cevap vermeyenlerdi. Muhtar dahil. Ve Selim... Selim de cevap vermemişti."),
+ ("muhtar_door", {}, "O akşam muhtar son kez geldi. Kapıyı çalmadı. Eşiğe sönmüş bir fener bıraktı. Fenerin camına, içeriden, buğuya yazılmıştı: Cevap verme hocam. Bizden ol."),
  ("profile", {}, "Peki cevap verenler? Defterin son satırında yazıyordu: Cevap veren, zemheriyi bitirir. Ama bedeli... kimse bilmiyor."),
  ("door_in", {"call": "girl"}, "Saat üçü on iki geçe kapı çalındı. Bu sefer annesi değildi. Zeynep'ti. Ağlıyordu. Hocam, diyordu, ne olur cevap ver. Bizi de kurtar."),
  ("window", {}, "Bir. İki. Emre kapıya yürüdü. Elini kola koydu. Ve üçüncü çağrı geldi. Ama bu ses... ne annesinindi, ne Zeynep'in."),
@@ -112,8 +128,10 @@ EP.append(dict(no=10, ad="Cevap (Final)", shots=[
  ("reveal", {}, "Emre. Emre. Emre."),
  ("reveal", {"zoom": 1}, "Evet. Bendim. Selim. Senden önceki öğretmen. Cevap vermediğim için çağıran olan. On gecedir sana anlattığım her kelime... bir çağrıydı."),
  ("profile", {}, "Emre gözlerini kapattı. Ve hayatında hiç olmadığı kadar sakin bir sesle cevap verdi. Buradayım."),
+ ("window", {}, "Pencere bir anda buğulandı. Camın arkasında yüzler belirdi. Muhtar. Köylüler. Zeynep. Kırk yüz. Hepsi ona bakıyordu. Ve hepsi... ilk kez gülümsüyordu."),
  ("dawn", {}, "Güneş doğdu. Kırk gecedir ilk kez. Kar eriyordu. Lojman yoktu. Köy yoktu. Sadece otuz dokuz yıllık yıkıntılar. Ve karın üstünde kırk bir çift ayak izi. Hepsi insan izi. Hepsi... köyden dışarı gidiyordu."),
  ("ruins", {}, "Emre'yi o sabah yolda buldular. Yaşıyordu. Ama saçları... bembeyazdı. Kimseye hiçbir şey anlatmadı. Sadece bir şey sordu: Zemheri ne zaman başlıyor?"),
+ ("drawing", {}, "Aylar sonra Emre'ye bir zarf geldi. Göndereni yoktu. İçinde bir çocuk resmi vardı. Bir sınıf. Sekiz sıra. Ve sekizinci sıranın üstünde... Emre'nin adı."),
  ("hook", {"final": 1}, "Çünkü zemheri her yıl gelir. Ve bir çağıran her yıl... yeni birini bulur. Bu seriyi sonuna kadar izledin. Adını üç kere söylesem... cevap verir misin?"),
 ], son="SON. Bu hikâye bitti mi sence? Yorumlara yaz."))
 

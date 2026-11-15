@@ -62,7 +62,7 @@ def template(name, p, D):
         else: cam = lambda t: (1+0.1*ease(t/D), (620, 1100), (0, 0))
         capy = 420
     elif name == 'desk':
-        kn = [D*0.55, D*0.55+0.5, D*0.55+1.0] if p.get('knock') else []
+        kn = [D-3.0, D-2.5, D-2.0] if p.get('knock') else []
         hid = p.get('hidden')
         ly = [L_('s4_room', z=0.5), L_('s4_hidden', z=0.5, alpha=lambda t: win(t, D*0.8, D*0.8+0.5, 0.06)) if hid else None,
               L_('s4_frame', z=0.5), L_('s4_teacher', z=0.8),
@@ -84,7 +84,7 @@ def template(name, p, D):
         sfx.append((0, 'heart'))
         if p.get('call'): sfx.append((0.4, 'call_'+p['call']))
     elif name == 'window':
-        SL = D*0.5 if p.get('slam') else 1e9
+        SL = D-3.2 if p.get('slam') else 1e9
         def ctf(t):
             dy = 900*(1-eoc((t-0.3)/2.2)); sc = 1+(0.05*math.exp(-((t-SL)/0.25)**2) if t > SL-0.3 else 0)
             return (0, dy, 0, sc, sc, 540, 760)
@@ -258,10 +258,12 @@ def timeline(ep):
     for i, (name, p, txt) in enumerate(ep['shots']):
         seg = al['segs'][i]  # [a,b] in narration file or None
         nd = (seg[1]-seg[0]) if seg else 0
-        D = max(4.0 if not seg else 3.0, PRE+nd+POST)
-        if name == 'window': D += 1.5
-        if name == 'door_in' and p.get('call') and not txt: D = 6.5
-        shots.append(dict(i=i, name=name, p=p, txt=txt, start=t, dur=D, vo=(t+PRE, seg) if seg else None)); t += D
+        pre = 3.2 if p.get('call') else PRE
+        post = POST+{'desk': 3.5 if p.get('knock') else 0.5, 'window': 3.6 if p.get('slam') else 1.5, 'carved': 2.0, 'hook': 1.2,
+                     'shadow': 1.5, 'reveal': 1.0, 'plates': 1.0}.get(name, 0.3)
+        D = max(4.0 if not seg else 3.0, pre+nd+post)
+        if name == 'door_in' and p.get('call') and not txt: D = 7.0
+        shots.append(dict(i=i, name=name, p=p, txt=txt, start=t, dur=D, vo=(t+pre, seg) if seg else None)); t += D
     shots.append(dict(i=len(shots), name='endcard', p={}, txt='', start=t, dur=7.0, vo=None)); t += 7.0
     return shots, t
 
