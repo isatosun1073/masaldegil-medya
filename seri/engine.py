@@ -110,7 +110,7 @@ def template(name, p, D):
         ly = [L_('paper', {'lines': p['lines'], 'burn': p.get('burn', 0)})]
         if p.get('burn'): ly.append(L_('stove_glow', mode='a', alpha=lambda t: 0.4+0.2*vnoise(t*2, 9)))
         cam = lambda t: (1.02+0.1*ease(t/D), (540, 700+500*ease(t/D)), (0, 0)); capy = None
-        extra['flashlight'] = True; sfx.append((0.2, 'page'))
+        extra['flashlight'] = True; extra['grade'] = (0.8, 0.78, 0.74); sfx.append((0.2, 'page'))
     elif name == 'girl':
         ly = [L_('girl_bg', z=0.3), L_('girl', z=0.8, tf=lambda t: (0, 0, 0, 1, 1+0.006*math.sin(t*2.0), 540, 2100))]
         cam = lambda t: (1+(0.3 if p.get('zoom') else 0.1)*ease(t/D), (540, 900), (0, 0)); capy = 1560
@@ -274,10 +274,10 @@ def caps_for(ep, shots):
         if s['name'] == 'endcard':
             st = s['start']
             if ep['no'] < 10:
-                caps += [(st+0.6, st+7, [(f"ZEMHERİ · {ep['no']}. BÖLÜM SONU", 's')], 1230),
-                         (st+1.2, st+7, [(l, 'a' if i else 'w') for i, l in enumerate(wrap2(ep['son'].split(' Yarın')[0].split(' 2. bölüm')[0].split(' 3. bölüm')[0]))], 1360),
-                         (st+2.4, st+7, [("Devamı yarın gece 00.00'da", 'w')], 1520),
-                         (st+3.2, st+7, [(Z.HESAP, 'b')], 1640)]
+                caps += [(st+0.6, st+7, [(f"ZEMHERİ · {ep['no']}. BÖLÜM SONU", 's')], 1170),
+                         (st+1.2, st+7, [(l, 'a' if i else 'w') for i, l in enumerate(wrap2(re.split(r'\s(?:Yarın|\d+\. bölüm|FİNAL)', ep['son'])[0]))], 1360),
+                         (st+2.4, st+7, [("Devamı yarın gece 00.00'da", 'w')], 1580),
+                         (st+3.2, st+7, [(Z.HESAP, 'b')], 1690)]
             else:
                 caps += [(st+0.6, st+7, [("SON.", 'T')], 1250), (st+1.6, st+7, [("Adını yorumlara yazma.", 'w'), ("Üç kişi yazarsa...", 'a')], 1420),
                          (st+3.0, st+7, [(Z.HESAP, 'b')], 1640)]
